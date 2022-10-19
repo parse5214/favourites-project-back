@@ -1,5 +1,5 @@
 import express from 'express';
-import { getPosts, createPost, updatePost } from '../controllers/controllers.js';
+import { getPosts, createPost, updatePost, deletePost } from '../controllers/controllers.js';
 
 const router = express.Router();
 
