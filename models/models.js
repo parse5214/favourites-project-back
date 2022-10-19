@@ -1,9 +1,13 @@
 import { Schema, model } from 'mongoose';
 
 const schema = new Schema({
-  user: 'String',
-  book: 'String',
+  selectedFile: 'String',
   movie: 'String',
+  rating: {
+    type: Number,
+    min: 0,
+    max: 5
+  },
   date: {
     type: Date,
     default: new Date()
